@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AmoralChecker — скачать</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    min-height: 100vh;
+    background: radial-gradient(ellipse at 30% 20%, #1A2233 0%, #0B0F16 55%),
+                radial-gradient(ellipse at 80% 80%, #23122e 0%, transparent 50%);
+    background-color: #0B0F16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: #121826;
+    border: 1px solid #232C40;
+    border-radius: 20px;
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    animation: floatCard 4s ease-in-out infinite;
+  }
+
+  @keyframes floatCard {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .logo {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: block;
+    box-shadow: 0 0 40px rgba(32, 214, 232, 0.35);
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #20D6E8, #9D6BFF, #20D6E8);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 4s linear infinite;
+    margin-bottom: 6px;
+  }
+
+  @keyframes shine {
+    to { background-position: 200% center; }
+  }
+
+  .subtitle {
+    color: #8792A8;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .desc {
+    color: #E8EDF5;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #20D6E8, #3DDC84);
+    color: #04121A;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 0 0 rgba(32, 214, 232, 0.5);
+    animation: breathe 2.2s ease-in-out infinite;
+    transition: transform 0.15s ease;
+  }
+
+  .download-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  @keyframes breathe {
+    0%, 100% { box-shadow: 0 0 20px rgba(32, 214, 232, 0.35); }
+    50% { box-shadow: 0 0 34px rgba(32, 214, 232, 0.6); }
+  }
+
+  .note {
+    margin-top: 20px;
+    color: #5B6478;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .note b { color: #8792A8; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="app_icon_256.png" alt="AmoralChecker">
+    <h1>AmoralChecker</h1>
+    <div class="subtitle">ASTRUM · anti-cheat tool</div>
+    <div class="desc">
+      Инструмент для проверки ПК на запрещённое ПО и модификации Minecraft.
+      Скачайте и запустите — код доступа вам сообщит администратор.
+    </div>
+
+    <a class="download-btn"
+       href="https://github.com/bodw0w/AmoralChecker/releases/download/v1.0/AmoralChecker.exe"
+       download>
+      ⬇ Скачать AmoralChecker.exe
+    </a>
+
+    <div class="note">
+      При первом запуске Windows может показать предупреждение
+      (<b>«Неизвестный издатель»</b>) — это нормально, нажмите
+      <b>«Подробнее» → «Выполнить в любом случае»</b>.
+    </div>
+  </div>
+</body>
+</html>
